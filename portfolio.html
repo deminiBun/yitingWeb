@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Portfolio</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width = devide-width, initial-scale = 1.0">
+<!--[if lt IE 9]> 
+<script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
+ <![endif]-->
+</head>
+<body>
+<header>
+<ul class="nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">About Me</a></li>
+<li class="active"><li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="travel.html">Travel</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="p_desc">
+<img src="images/image2.jpg" width="300" height="300" align="right">
+<h1>CPRE281 Final Project</h1><br>
+<h2>Introduction</h2>
+<p>The topic that I have decided in this project is about checking if a list numbers is sorted. 
+It is an individual assignment in which students will apply the materials learn in lecture and labs. 
+I choose to work on this project because I was interested to know how I could implement with a finite
+ state machine and circuit together to build a complete design for sorted numbers. Fortunately, there 
+ was a rubric with list of requirements in each project topics that guides me a lot throughout the journey. 
+Before going into the most interesting part by combining all types of component altogether, I would first test each circuit, debug the errors, and check the output from the Altera DE2 board so that everything is shown out accurately. Based on the top-level diagram that is shown about, I have included various components which is learned in digital logic’s class as well as extra resources from the textbooks. </P>
+<br><h2>Description</h2>
+<p>Implement finite state machine and circuit that allows user to enter a list of numbers into a register file and press a button to determine if the list is sorted in increasing order. The circuit for this project will have two modes which are initialization mode and checking mode. 
+For initialization mode, the numbers will be loaded one by one into the register file. Two values will be provided by the user through the switches on the Alterra board which are the address and number. The address specifies in which register the number should be stored. A LOAD switch is used to load each value into the register file. Once all the numbers are loaded into the register file, a different switch is used to change modes. 
+For the checking mode, a VALIDATE switch needs to be pressed to begin the validation process. The machine should iterate through the registers and compare each with its neighbor in the address space. If the contents of the two registers are not sorted in increasing order, then the machine should stop the iteration and indicate with the LEDs or in some other way the position of the exception. That is, the address or location of the first register that has a lower value than the preceding register.
+It is required to have a register file with eight 4-bit registers in this project. The values stored in the registers must be visualized on the eight 7-segment displays while rest of the datapath should contain the comparator circuit that is used for checking and any other components that may be necessary.
+</p><br><br></div>
+</header>
+</body>
+</html>
